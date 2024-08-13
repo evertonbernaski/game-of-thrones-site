@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Thrones - Página Principal</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #1a1a1a;
+            color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .hero {
+            background-image: url('https://wallpapercave.com/wp/wp12401495.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        .container h2 {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .card {
+            background-color: #2c2c2c;
+            border: none;
+            margin-bottom: 20px;
+        }
+        .card img {
+            border-radius: 5px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            color: #f8f9fa;
+        }
+        .card-text {
+            color: #d1d1d1;
+        }
+        footer {
+            background-color: #343a40;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Game of Thrones</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#secao1">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#secao2">Personagens</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#secao3">Sobre</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="secao1">
+        <h1>Bem-vindo ao Mundo de Game of Thrones</h1>
+    </section>
+
+    <!-- Conteúdo principal -->
+    <main class="container mt-4">
+        <section id="secao2" class="my-4">
+            <h2>Personagens Principais</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://wallpapercave.com/wp/wp1834693.jpg" class="card-img-top" alt="Jon Snow">
+                        <div class="card-body">
+                            <h5 class="card-title">Jon Snow</h5>
+                            <p class="card-text">Jon Snow, conhecido como o bastardo de Winterfell, é um dos personagens mais icônicos de Game of Thrones. Sua história é marcada pela luta por justiça e honra. Sendo um dos principais personagens.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://wallpapercave.com/wp/wp1978654.jpg" class="card-img-top" alt="Daenerys Targaryen">
+                        <div class="card-body">
+                            <h5 class="card-title">Daenerys Targaryen</h5>
+                            <p class="card-text">Daenerys Targaryen, a Mãe dos Dragões, tem uma trajetória épica em busca do Trono de Ferro. Sua determinação e poder fazem dela uma das figuras mais fascinantes da série.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://wallpapercave.com/wp/wp1870327.jpg" class="card-img-top" alt="Tyrion Lannister">
+                        <div class="card-body">
+                            <h5 class="card-title">Tyrion Lannister</h5>
+                            <p class="card-text">Tyrion Lannister, o Duende, é um personagem astuto e cheio de humor. Apesar de ser subestimado por muitos, ele prova sua inteligência e coragem repetidamente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="secao3" class="my-4">
+            <h2>Sobre Game of Thrones</h2>
+            <p style="text-align: justify;">Game of Thrones é uma série de televisão baseada na série de livros "As Crônicas de Gelo e Fogo" de George R. R. Martin. A série estreou em 2011 e rapidamente se tornou um fenômeno cultural global, conhecida por suas tramas complexas, personagens envolventes e batalhas épicas.</p>
+            <p style="text-align: justify;">A série se passa em Westeros, um continente fictício onde várias casas nobres lutam pelo controle do Trono de Ferro e, portanto, pelo domínio sobre os Sete Reinos. Além das batalhas políticas, Game of Thrones também explora temas de poder, família, lealdade e sobrevivência em um mundo brutal e impiedoso.</p>
+            <p style="text-align: justify;">Com oito temporadas, Game of Thrones conquistou milhões de fãs ao redor do mundo, recebendo diversos prêmios e elogios da crítica por sua produção de alta qualidade, roteiros bem elaborados e performances memoráveis.</p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; <span id="ano"></span> Game of Thrones Fan Page. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
